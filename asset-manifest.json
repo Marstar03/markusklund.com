@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/markusklund.com/static/css/main.f2404825.css",
+    "main.js": "/markusklund.com/static/js/main.c6938cd6.js",
+    "static/js/453.2a82e7ac.chunk.js": "/markusklund.com/static/js/453.2a82e7ac.chunk.js",
+    "index.html": "/markusklund.com/index.html",
+    "main.f2404825.css.map": "/markusklund.com/static/css/main.f2404825.css.map",
+    "main.c6938cd6.js.map": "/markusklund.com/static/js/main.c6938cd6.js.map",
+    "453.2a82e7ac.chunk.js.map": "/markusklund.com/static/js/453.2a82e7ac.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f2404825.css",
+    "static/js/main.c6938cd6.js"
+  ]
+}
