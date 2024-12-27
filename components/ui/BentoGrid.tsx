@@ -2,8 +2,6 @@
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { div, span } from "framer-motion/client";
-import { Span } from "next/dist/trace";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
