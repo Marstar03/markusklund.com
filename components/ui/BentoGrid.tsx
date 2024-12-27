@@ -2,8 +2,6 @@
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { div, span } from "framer-motion/client";
-import { Span } from "next/dist/trace";
 import Lottie from "react-lottie";
 import { useState } from "react";
 import animationData from '@/data/confetti.json'
@@ -57,6 +55,9 @@ export const BentoGridItem = ({
     navigator.clipboard.writeText('markus.klund@hotmail.com');
 
     setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 5000);
   }
 
   return (
@@ -90,7 +91,7 @@ export const BentoGridItem = ({
                 />
             )}
         </div>
-        {id === 6 && (
+        {id === 3 && (
             <BackgroundGradientAnimation>
 {/*                 <div className="absolute z-50 flex items-center justify-center text-white font-bold" />
  */}            </BackgroundGradientAnimation>
@@ -105,10 +106,10 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
-        {id === 3 && (
+        {id === 1 && (
           <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:.right-2">
             <div className="flex flex-col gap-3 lg:gap-8">
-              {['React.js', 'Next.js', 'Typescript'].map((item) => (
+              {['React.js', 'Next.js', '.NET'].map((item) => (
                 <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                   {item}
                 </span>
@@ -119,7 +120,7 @@ export const BentoGridItem = ({
 
             <div className="flex flex-col gap-3 lg:gap-8">
               <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
-              {['VueJS', 'AWS', 'MongoDB'].map((item) => (
+              {['Docker', 'MongoDB', 'Kafka'].map((item) => (
                 <span key={item} className="py-2 lg:py-4 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                   {item}
                 </span>
@@ -129,7 +130,7 @@ export const BentoGridItem = ({
           </div>
         )}
 
-        {id === 6 && (
+        {id === 3 && (
           <div className="mt-5 relative">
             <div className={`absolute -bottom-5 right-0`}>
               <Lottie options={{
