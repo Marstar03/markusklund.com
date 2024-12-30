@@ -3,7 +3,8 @@
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 import MagicButton from "./MagicButton";
-import { IoCopyOutline, IoDownload, IoDownloadOutline, IoDownloadSharp } from "react-icons/io5";
+import { IoCopyOutline, IoDownloadOutline } from "react-icons/io5";
+import ErrorBanner from "./ErrorBanner";
 
 export const BentoGrid = ({
   className,
@@ -50,6 +51,8 @@ export const BentoGridItem = ({
 
   const [downloaded, setDownloaded] = useState(false);
 
+  const [error, setError] = useState<string | null>(null);
+
   const handleCopy = () => {
     navigator.clipboard.writeText('markus.klund@hotmail.com');
 
@@ -59,17 +62,23 @@ export const BentoGridItem = ({
     }, 5000);
   }
 
-  const handleDownload = () => {
+  const handleDownload = async () => {
+    const response = await fetch("/CV_Markus_Klund.pdf");
+    if (!response.ok) {
+      setError("An error occurred while downloading the file. Please try again.");
+      return;
+    }
+
     const link = document.createElement("a");
-    link.href = "/CV_Markus_Klund.pdf"; // Use public path
+    link.href = "/CV_Markus_Klund.pdf";
     link.download = "CV_Markus_Klund.pdf";
-    document.body.appendChild(link); // Append to the DOM
+    document.body.appendChild(link);
     link.click();
-    document.body.removeChild(link); // Remove from the DOM
+    document.body.removeChild(link);
 
     setDownloaded(true);
     setTimeout(() => {
-        setDownloaded(false);
+      setDownloaded(false);
     }, 5000);
   };
 
@@ -164,6 +173,7 @@ export const BentoGridItem = ({
 
         </div>
       </div>
+      {error && <ErrorBanner message={error} onClose={() => setError(null)} />}
     </div>
   );
 };
