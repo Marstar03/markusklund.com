@@ -3,7 +3,7 @@
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 import MagicButton from "./MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoDownload, IoDownloadOutline, IoDownloadSharp } from "react-icons/io5";
 
 export const BentoGrid = ({
   className,
@@ -48,6 +48,8 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
+  const [downloaded, setDownloaded] = useState(false);
+
   const handleCopy = () => {
     navigator.clipboard.writeText('markus.klund@hotmail.com');
 
@@ -56,6 +58,20 @@ export const BentoGridItem = ({
       setCopied(false);
     }, 5000);
   }
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/CV_Markus_Klund.pdf"; // Use public path
+    link.download = "CV_Markus_Klund.pdf";
+    document.body.appendChild(link); // Append to the DOM
+    link.click();
+    document.body.removeChild(link); // Remove from the DOM
+
+    setDownloaded(true);
+    setTimeout(() => {
+        setDownloaded(false);
+    }, 5000);
+  };
 
   return (
     <div
@@ -130,6 +146,18 @@ export const BentoGridItem = ({
               position="left"
               otherClasses="!bg-[#161a31]"
               handleClick={handleCopy}
+            />
+          </div>
+        )}
+
+        {id === 4 && (
+          <div className="mt-5 relative">
+            <MagicButton 
+              title={downloaded ? 'CV downloaded' : 'Download my CV'}
+              icon={<IoDownloadOutline />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+              handleClick={handleDownload}
             />
           </div>
         )}
