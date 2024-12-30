@@ -3,7 +3,8 @@
 import { cn } from "@/utils/cn";
 import { useState } from "react";
 import MagicButton from "./MagicButton";
-import { IoCopyOutline } from "react-icons/io5";
+import { IoCopyOutline, IoDownloadOutline } from "react-icons/io5";
+import ErrorBanner from "./ErrorBanner";
 
 export const BentoGrid = ({
   className,
@@ -48,6 +49,10 @@ export const BentoGridItem = ({
 
   const [copied, setCopied] = useState(false);
 
+  const [downloaded, setDownloaded] = useState(false);
+
+  const [error, setError] = useState<string | null>(null);
+
   const handleCopy = () => {
     navigator.clipboard.writeText('markus.klund@hotmail.com');
 
@@ -56,6 +61,26 @@ export const BentoGridItem = ({
       setCopied(false);
     }, 5000);
   }
+
+  const handleDownload = async () => {
+    const response = await fetch("/CV_Markus_Klund.pdf");
+    if (!response.ok) {
+      setError("An error occurred while downloading the file. Please try again.");
+      return;
+    }
+
+    const link = document.createElement("a");
+    link.href = "/CV_Markus_Klund.pdf";
+    link.download = "CV_Markus_Klund.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setDownloaded(true);
+    setTimeout(() => {
+      setDownloaded(false);
+    }, 5000);
+  };
 
   return (
     <div
@@ -134,8 +159,21 @@ export const BentoGridItem = ({
           </div>
         )}
 
+        {id === 4 && (
+          <div className="mt-5 relative">
+            <MagicButton 
+              title={downloaded ? 'CV downloaded' : 'Download my CV'}
+              icon={<IoDownloadOutline />}
+              position="left"
+              otherClasses="!bg-[#161a31]"
+              handleClick={handleDownload}
+            />
+          </div>
+        )}
+
         </div>
       </div>
+      {error && <ErrorBanner message={error} onClose={() => setError(null)} />}
     </div>
   );
 };
