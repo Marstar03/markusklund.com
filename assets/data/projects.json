@@ -1,0 +1,30 @@
+[
+  {
+    "title": "RISC-V Processor",
+    "description": "Fully working processor with branch prediction, designed in Chisel HDL.",
+    "link": "https://github.com/Marstar03/RISC-V-processor",
+    "tech": ["Scala", "Chisel"],
+    "icon": "/assets/icons/scala.svg"
+  },
+  {
+    "title": "Capture the Flag",
+    "description": "Two-player game developed in Unity.",
+    "link": "https://github.com/Marstar03/Capture-the-Flag",
+    "tech": ["Unity", "C#"],
+    "icon": "/assets/icons/unity.svg"
+  },
+  {
+    "title": "DestinationDino",
+    "description": "App for finding your next travel destination.",
+    "link": "https://github.com/Marstar03/DestinationDino",
+    "tech": ["React", "TypeScript", "Java"],
+    "icon": "/assets/icons/re.svg"
+  },
+  {
+    "title": "Sudoku",
+    "description": "Sudoku game developed in JavaFX.",
+    "link": "https://github.com/Marstar03/SudokuGame",
+    "tech": ["Java", "JavaFX"],
+    "icon": "/assets/icons/java.svg"
+  }
+]

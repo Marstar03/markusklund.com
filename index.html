@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markus Klund Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Markus Klund"
+    />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/fm.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header"></header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Software Engineer</p>
+            <h1>Hi, I'm Markus. I build useful, reliable software.</h1>
+            <p class="lead">
+              I focus on clean architecture, performance, and practical solutions.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Get in touch</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>Currently</h2>
+            <p>DevOps Mentor at Orbit NTNU</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I'm an integrated master's student in Computer Science at NTNU, with
+            passion for high-performance computing, computer networks and embedded systems.
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Projects</h2>
+          </div>
+          <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="container">
+            <div class="section-head">
+            <h2>Resume</h2>
+            </div>
+            <div class="resume-wrap">
+            <iframe
+                class="resume-frame"
+                src="./public/Markus_Klund_CV.pdf"
+                title="Markus Klund Resume"
+                loading="lazy">
+            </iframe>
+            </div>
+        </div>
+        </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p>If you want to collaborate, feel free to reach out.</p>
+          <div class="contact-row">
+            <a class="btn" href="mailto:markus.klund@gmail.com">Email</a>
+            <a class="btn" href="https://github.com/Marstar03" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="https://linkedin.com/in/markus-klund" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
