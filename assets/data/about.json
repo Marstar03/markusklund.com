@@ -1,0 +1,30 @@
+{
+  "sections": [
+    {
+      "title": "Who I Am",
+      "type": "paragraphs",
+      "content": [
+        "I'm an integrated master's student in Computer Science at NTNU, passionate about building systems that work. I focus on clean architecture, performance optimization, and practical solutions that solve real problems.",
+        "My interests span high-performance computing, computer networks, and embedded systems design. I believe in learning by doing—whether that's designing processors in Chisel, building distributed systems, or shipping working software."
+      ]
+    },
+    {
+      "title": "Outside of Code",
+      "type": "paragraphs",
+      "content": [
+        "When I'm not coding, you'll find me exploring the outdoors, hiking in the Norwegian mountains, or tinkering with side projects. I'm always curious about how things work—from the physics of networks to the design of embedded systems."
+      ]
+    },
+    {
+      "title": "What I Value",
+      "type": "list",
+      "content": [
+        "Clear, maintainable code that scales",
+        "Understanding the \"why\" behind technical decisions",
+        "Collaborative problem-solving and learning from others",
+        "Practical solutions over unnecessary complexity",
+        "Performance and efficiency at all levels"
+      ]
+    }
+  ]
+}

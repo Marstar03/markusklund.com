@@ -4,27 +4,34 @@
     "description": "Fully working processor with branch prediction, designed in Chisel HDL.",
     "link": "https://github.com/Marstar03/RISC-V-processor",
     "tech": ["Scala", "Chisel"],
-    "icon": "/assets/icons/scala.svg"
+    "icon": "/assets/icons/cpu.svg"
+  },
+  {
+    "title": "Remote Switch",
+    "description": "IoT device for remotely flipping light switch based on the ESP8266.",
+    "link": "https://github.com/Marstar03/remote-switch",
+    "tech": ["MQTT", "C", "FreeRTOS"],
+    "icon": "/assets/icons/iot.svg"
   },
   {
     "title": "Capture the Flag",
     "description": "Two-player game developed in Unity.",
     "link": "https://github.com/Marstar03/Capture-the-Flag",
     "tech": ["Unity", "C#"],
-    "icon": "/assets/icons/unity.svg"
+    "icon": "/assets/icons/game.svg"
   },
   {
-    "title": "DestinationDino",
-    "description": "App for finding your next travel destination.",
-    "link": "https://github.com/Marstar03/DestinationDino",
-    "tech": ["React", "TypeScript", "Java"],
-    "icon": "/assets/icons/re.svg"
+    "title": "ZYNQ Edge Detection",
+    "description": "RTL design for object detection and tracking on ZYNQ FPGA.",
+    "link": "https://github.com/Marstar03/zynq-edge-detection",
+    "tech": ["Verilog", "C"],
+    "icon": "/assets/icons/computer-vision.svg"
   },
   {
-    "title": "Sudoku",
-    "description": "Sudoku game developed in JavaFX.",
-    "link": "https://github.com/Marstar03/SudokuGame",
-    "tech": ["Java", "JavaFX"],
-    "icon": "/assets/icons/java.svg"
+    "title": "markusklund.dev",
+    "description": "Portfolio website written in pure HTML, CSS, and JavaScript.",
+    "link": "https://github.com/Marstar03/markusklund.dev",
+    "tech": ["HTML", "CSS", "JavaScript"],
+    "icon": "/assets/icons/website.svg"
   }
 ]
