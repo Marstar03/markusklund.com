@@ -1,0 +1,132 @@
+{
+  "resumeUrl": "../assets/data/Markus_Klund_CV.pdf",
+  "sections": [
+    {
+      "type": "education",
+      "title": "Education",
+      "items": [
+        {
+          "title": "Integrated Master's in Computer Science",
+          "company": "Norwegian University of Science and Technology (NTNU)",
+          "period": "Aug. 2022 - Present",
+          "location": "Trondheim, Norge",
+          "description": "Focus on systems programming, computer networks, embedded systems, and practical software architecture."
+        },
+        {
+          "title": "Study Abroad, Computer Science",
+          "company": "The University of Queensland (UQ)",
+          "period": "Jul. 2025 - Dec. 2025",
+          "location": "Brisbane, Australia",
+          "description": "Focus on high-performance computing, advanced algorithms, and FPGA design."
+        }
+      ]
+    },
+    {
+      "type": "experience",
+      "title": "Work Experience",
+      "items": [
+        {
+          "title": "Software Developer / IT Consultant",
+          "company": "Bouvet ASA",
+          "period": "Jun. 2025 - Jul. 2025",
+          "location": "Trondheim, Norway",
+          "description": "Developed a new version of Verform's roof calculation tool with a focus on improvements in modularity, efficiency, and usability. I held the main responsibility for the backend of the project.",
+          "technologies": [
+            "TypeScript",
+            "React",
+            "Node.js",
+            "Express.js",
+            "MySQL"
+          ]
+        },
+        {
+          "title": "Software Developer",
+          "company": "Norsk Helsenett",
+          "period": "Jun. 2024 - Aug. 2024",
+          "location": "Trondheim, Norway",
+          "description": "Responsible for developing an admin interface for managing patients' test results.",
+          "technologies": [".NET/C#", "MongoDB", "Docker", "Kafka", "Auth0"]
+        },
+        {
+          "title": "DevOps Engineer, Team Lead and Mentor",
+          "company": "Orbit NTNU",
+          "period": "Sept. 2023 - Present",
+          "location": "Trondheim, Norway",
+          "description": "Main responsibility for server administration, as well as various projects in automation and web development.",
+          "technologies": [
+            "OpenStack",
+            "JavaScript",
+            "Python",
+            "CI/CD",
+            "Linux (Ubuntu)",
+            "Google Auth"
+          ]
+        },
+        {
+          "title": "Avionics Engineer",
+          "company": "UQ Space",
+          "period": "Sept. 2025 - Dec. 2025",
+          "location": "Brisbane, Australia",
+          "description": "Working on the development of embedded systems for rockets and rovers.",
+          "technologies": ["STM32", "I2C", "UART"]
+        },
+        {
+          "title": "Teaching Assistant, TDT4186 Operating Systems",
+          "company": "Department of Computer Science, NTNU",
+          "period": "Jan. 2025 - May 2025",
+          "location": "Trondheim, Norway",
+          "description": "Responsible for assisting students with programming in C and the XV6 operating system."
+        },
+        {
+          "title": "Teaching Assistant, TDT4100 Object-Oriented Programming",
+          "company": "Department of Computer Science, NTNU",
+          "period": "Jan. 2024 - May 2024",
+          "location": "Trondheim, Norway",
+          "description": "Responsible for assisting students with programming in Java, as well as reviewing and approving submitted assignments."
+        }
+      ]
+    },
+    {
+      "type": "skills",
+      "title": "Skills",
+      "groups": [
+        {
+          "title": "Technical",
+          "items": [
+            "Server Administration",
+            "Web Development",
+            "High-Performance Computing in C/C++",
+            "FPGA Design"
+          ]
+        },
+        {
+          "title": "Tools",
+          "items": [
+            "Docker",
+            "Git",
+            "Linux",
+            "CI/CD Pipelines",
+            "MongoDB",
+            "Kafka",
+            "Auth0"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "interests",
+      "title": "Interests",
+      "items": ["Climbing", "Guitar", "Calisthenics", "Travelling"]
+    },
+    {
+      "type": "languages",
+      "title": "Languages",
+      "items": ["Norwegian", "English"]
+    },
+    {
+      "type": "cta",
+      "title": "Download Resume",
+      "description": "For a detailed breakdown of my experience, education, and projects, download my full resume."
+    }
+  ]
+}

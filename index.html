@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Markus Klund Portfolio</title>
+    <meta name="description" content="Portfolio website for Markus Klund" />
+    <meta name="color-scheme" content="dark light" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/fm.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header"></header>
+
+    <main id="main">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">Software Engineer</p>
+            <h1>Hi, I'm Markus</h1>
+            <p class="lead">
+              I'm a Computer Science student passionate about automation, cloud
+              services, and embedded systems.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="./work/index.html"
+                >View My Work</a
+              >
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-portrait">
+            <picture class="portrait">
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/portrait-1600.webp 1600w,
+                  ./assets/images/portrait-960.webp   960w,
+                  ./assets/images/portrait-480.webp   480w
+                "
+                sizes="(max-width:600px) 180px, 240px"
+              />
+              <img
+                src="./assets/images/portrait-960.webp"
+                srcset="
+                  ./assets/images/portrait-960.webp 960w,
+                  ./assets/images/portrait-480.webp 480w
+                "
+                sizes="(max-width:600px) 180px, 240px"
+                width="240"
+                height="240"
+                alt="Portrait of Markus Klund"
+                loading="lazy"
+                decoding="async"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <p class="lead">
+            Interested in connecting? Reach out through any of these channels.
+          </p>
+          <div class="contact-row contact-icon-row">
+            <a
+              class="icon-btn icon-btn-primary"
+              href="mailto:markus.klund@gmail.com"
+              aria-label="Email Markus"
+            >
+              <span class="icon icon-email" aria-hidden="true"></span>
+            </a>
+            <a
+              class="icon-btn"
+              href="https://github.com/Marstar03"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
+              <span class="icon icon-github" aria-hidden="true"></span>
+            </a>
+            <a
+              class="icon-btn"
+              href="https://linkedin.com/in/markus-klund"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
+              <span class="icon icon-linkedin" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="quick-links" aria-label="Additional links">
+            <a class="btn" href="./about/index.html">Learn more about me</a>
+            <a class="btn" href="./projects/index.html">See my projects</a>
+            <a
+              class="btn btn-primary"
+              href="./assets/data/Markus_Klund_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"></footer>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
